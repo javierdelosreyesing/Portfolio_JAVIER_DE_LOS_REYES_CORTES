@@ -85,6 +85,21 @@
             padding-bottom: 10px;
             margin-top: 0;
         }
+        .btn-cv {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #1e3a8a;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.2s;
+        }
+        .btn-cv:hover {
+            background-color: #0ea5e9;
+            color: #fff;
+        }
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -130,12 +145,12 @@
         .btn-doc:hover {
             background-color: #1e3a8a;
         }
-        .job, .edu-item {
+        .job, .edu-item, .vol-item {
             margin-bottom: 20px;
             border-left: 3px solid #38bdf8;
             padding-left: 15px;
         }
-        .job-title, .edu-title {
+        .job-title, .edu-title, .vol-title {
             font-weight: bold;
             font-size: 1.1em;
             color: #2c3e50;
@@ -206,7 +221,7 @@
                 <a href="#sobre-mi">Sobre mí</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#experiencia">Experiencia</a>
-                <a href="#educacion">Educación</a>
+                <a href="#voluntariado">Compromiso</a>
             </nav>
         </div>
     </header>
@@ -218,6 +233,7 @@
             <p>
                 Ingeniero eléctrico con sólida formación en sistemas de protección, control y automatización de redes de transporte y distribución eléctrica. Cuento con experiencia en ajuste de protecciones, pruebas de relés, coordinación de esquemas y análisis de fallos. Acostumbrado a trabajar en proyectos de subestaciones de alta tensión, asegurando el cumplimiento de estándares técnicos y la fiabilidad del sistema eléctrico nacional.
             </p>
+            <a href="CV Javier de los Reyes.pdf" download class="btn-cv">📥 Descargar Mi CV Completo (PDF)</a>
         </section>
 
         <section id="proyectos">
@@ -339,6 +355,15 @@
             </ul>
         </section>
 
+        <section id="voluntariado">
+            <h2>Compromiso Social y Voluntariado</h2>
+            <div class="vol-item">
+                <div class="vol-title">Voluntario de Apoyo y Logística</div>
+                <div class="company">Misioneras de la Caridad</div>
+                <p>Colaboración activa en residencias de la tercera edad, desempeñando tareas de acompañamiento y asistencia directa a personas mayores, actividades de entretenimiento y soporte en tareas de organización y limpieza del centro.</p>
+            </div>
+        </section>
+
         <section id="habilidades">
             <h2>Habilidades Técnicas y Competencias</h2>
             <p><strong>Software y Herramientas:</strong></p>
@@ -359,6 +384,7 @@
             </div>
             
             <p style="margin-top: 20px;"><strong>Competencias profesionales:</strong> Gestión de proyectos, trabajo en equipo, resiliencia, adaptabilidad, inteligencia emocional y proactividad.</p>
+            <p><strong>Idiomas:</strong> Inglés (Competencia profesional).</p>
         </section>
 
     </div>
