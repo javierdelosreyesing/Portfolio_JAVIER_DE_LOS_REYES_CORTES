@@ -100,51 +100,45 @@
             background-color: #0ea5e9;
             color: #fff;
         }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+
+        .portfolio-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2c3e50 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
             margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2);
         }
-        .project-card {
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            padding: 15px;
-            background-color: #fafbfc;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .project-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-        .project-icon {
+        .portfolio-banner h3 {
+            margin-top: 0;
             font-size: 1.5em;
-            margin-bottom: 8px;
+            color: #38bdf8;
         }
-        .project-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: #1e3a8a;
-            margin-bottom: 5px;
+        .portfolio-banner p {
+            font-size: 1em;
+            color: #e2e8f0;
+            max-width: 600px;
+            margin: 10px auto 25px auto;
         }
-        .project-desc {
-            font-size: 0.9em;
-            color: #555;
-            margin-bottom: 12px;
-        }
-        .btn-doc {
+        .btn-gallery {
             display: inline-block;
-            background-color: #2c3e50;
-            color: #fff;
+            background-color: #38bdf8;
+            color: #1e3a8a;
             text-decoration: none;
-            padding: 6px 12px;
-            font-size: 0.8em;
+            padding: 12px 25px;
+            font-size: 1em;
             border-radius: 4px;
             font-weight: bold;
+            transition: all 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        .btn-doc:hover {
-            background-color: #1e3a8a;
+        .btn-gallery:hover {
+            background-color: #fff;
+            color: #1e3a8a;
+            transform: translateY(-2px);
         }
+
         .job, .edu-item, .vol-item {
             margin-bottom: 20px;
             border-left: 3px solid #38bdf8;
@@ -157,8 +151,8 @@
         }
         .company, .date {
             color: #7f8c8d;
-            font-style: italic;
             font-size: 0.95em;
+            margin-top: 2px;
         }
         ul {
             padding-left: 20px;
@@ -219,9 +213,9 @@
             </div>
             <nav>
                 <a href="#sobre-mi">Sobre mí</a>
-                <a href="#proyectos">Proyectos</a>
+                <a href="proyectos.html">Proyectos</a>
                 <a href="#experiencia">Experiencia</a>
-                <a href="#voluntariado">Compromiso</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
@@ -236,33 +230,12 @@
             <a href="CV Javier de los Reyes.pdf" download class="btn-cv">📥 Descargar Mi CV Completo (PDF)</a>
         </section>
 
-        <section id="proyectos">
-            <h2>Proyectos Técnicos y Consultoría</h2>
-            <p>Selección de proyectos visados y consultorías técnicas especializadas:</p>
-            
-            <div class="project-grid">
-                
-                <div class="project-card">
-                    <div class="project-icon">☕</div>
-                    <div class="project-title">Locales de Pública Concurrencia</div>
-                    <div class="project-desc">Diseño, cálculo y proyectos eléctricos para la apertura de bares, restaurantes y locales comerciales bajo normativa de seguridad vigente.</div>
-                    <a href="proyecto-publica-concurrencia.pdf" target="_blank" class="btn-doc">Ver Proyecto (PDF)</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">🌱</div>
-                    <div class="project-title">Certificados de Eficiencia Energética</div>
-                    <div class="project-desc">Auditorías energéticas y emisión de certificados oficiales (CEE) para edificios nuevos y existentes bajo estándares de transición energética.</div>
-                    <a href="certificadoeficiencia.pdf" target="_blank" class="btn-doc">Ver Ficha Técnica</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">🚗</div>
-                    <div class="project-title">Desclasificación de Garajes</div>
-                    <div class="project-desc">Estudios técnicos de ventilación y atmósferas explosivas (ATEX) para la desclasificación de riesgos de incendios y gases en aparcamientos.</div>
-                    <a href="proyecto-desclasificacion.pdf" target="_blank" class="btn-doc">Ver Memoria</a>
-                </div>
-
+        <section id="proyectos-galeria">
+            <h2>Portfolio de Proyectos</h2>
+            <div class="portfolio-banner">
+                <h3>Proyectos Técnicos y Visados</h3>
+                <p>Explora mi galería extendida con imágenes y descripciones detalladas sobre Locales de Pública Concurrencia, Certificaciones de Eficiencia Energética y Desclasificación de Garajes en Atmósferas Explosivas (ATEX).</p>
+                <a href="proyectos.html" class="btn-gallery">📂 Ver Galería de Proyectos →</a>
             </div>
         </section>
 
@@ -329,7 +302,8 @@
                 <div class="company">Reyco Sistemas Eléctricos S.L</div>
                 <div class="date">Junio 2018 - Septiembre 2021</div>
                 <ul>
-                    <li>Diseño y montaje de instalaciones de baja tensión.</li>
+                    <li>Diseño de instalaciones de baja tensión.</li>
+                    <li>Montaje de instalaciones de baja tensión.</li>
                 </ul>
             </div>
         </section>
@@ -391,7 +365,7 @@
 
     <footer>
         <p>Contacto: Javier de los Reyes Cortés</p>
-        <p>Teléfono: 673 65 33 49 | Email: <a href="mailto:javier.delosreyescor@gmail.com">javier.delosreyescor@gmail.com</a></p>
+        <p>Teléfono: 673 65 33 49 | Email: <a href="mailto:javier.delosreyes.ing@gmail.com">javier.delosreyes.ing@gmail.com</a></p>
     </footer>
 
 </body>
