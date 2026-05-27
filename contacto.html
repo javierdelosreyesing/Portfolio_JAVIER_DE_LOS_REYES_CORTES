@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Javier de los Reyes Cortés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+        header {
+            background-color: #1e3a8a;
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-img {
+            height: 50px;
+            width: auto;
+            border-radius: 4px;
+            background-color: #fff;
+            padding: 2px;
+        }
+        .brand-text h1 {
+            margin: 0;
+            font-size: 1.5em;
+            letter-spacing: 0.5px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 0.95em;
+        }
+        nav a:hover {
+            color: #38bdf8;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .contact-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 2em;
+            text-align: center;
+        }
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 0.95em;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1em;
+            box-sizing: border-box;
+            background-color: #f8fafc;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #1e3a8a;
+            background-color: #fff;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: #1e3a8a;
+            color: #fff;
+            border: none;
+            padding: 14px;
+            font-size: 1.05em;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #2c3e50;
+        }
+
+        .direct-contact {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .direct-contact a {
+            color: #1e3a8a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .direct-contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 15px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .contact-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <img src="tu-logo-jrc.png" alt="Logo JRC" class="logo-img">
+                <div class="brand-text">
+                    <h1>Javier de los Reyes Cortés</h1>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">CV Principal</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html" style="color: #38bdf8;">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="contact-card">
+            <h2>Contacto</h2>
+            <p class="subtitle">¿Tienes algún proyecto en mente o una propuesta laboral? Envíame un mensaje directo.</p>
+
+            <form action="https://formspree.io/f/maqklgaa" method="POST">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="name" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="_replyto" placeholder="Ej. juan@empresa.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="subject" placeholder="Ej. Oferta de empleo / Consulta de proyecto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="message" placeholder="Escribe aquí los detalles de tu mensaje..." required></textarea>
+                </div>
+
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+
+            <div class="direct-contact">
+                <p>O si lo prefieres, escríbeme directamente a:<br>
+                <a href="mailto:javier.delosreyes.ing@gmail.com">javier.delosreyes.ing@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Javier de los Reyes Cortés - Ingeniero Eléctrico</p>
+    </footer>
+
+</body>
+</html>
